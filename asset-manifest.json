@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Webze-Website-/static/css/main.63f95846.css",
-    "main.js": "/Webze-Website-/static/js/main.cc751099.js",
+    "main.js": "/Webze-Website-/static/js/main.d492dfa2.js",
     "index.html": "/Webze-Website-/index.html",
     "main.63f95846.css.map": "/Webze-Website-/static/css/main.63f95846.css.map",
-    "main.cc751099.js.map": "/Webze-Website-/static/js/main.cc751099.js.map"
+    "main.d492dfa2.js.map": "/Webze-Website-/static/js/main.d492dfa2.js.map"
   },
   "entrypoints": [
     "static/css/main.63f95846.css",
-    "static/js/main.cc751099.js"
+    "static/js/main.d492dfa2.js"
   ]
 }
