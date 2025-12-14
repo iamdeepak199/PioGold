@@ -1,0 +1,252 @@
+/* MAIN SECTION */
+.features-section {
+  width: 100%;
+  padding: 80px 0;
+  background: #0f0f10;
+  color: #fff;
+  text-align: center;
+}
+
+/* TOP LABEL */
+.small-label {
+  background: #272727;
+  color: #f5b844;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* MAIN TITLE */
+.main-title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.muted {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #7b7b7b;
+}
+
+/* GRID */
+.features-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+/* LEFT + RIGHT CONTAINERS */
+.left-items,
+.right-items {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* FEATURE BOX */
+.feature-box {
+  position: relative;
+  max-width: 250px;
+  text-align: left;
+}
+
+.feature-box.right {
+  text-align: right;
+}
+
+/* BACKGROUND NUMBER */
+.bg-number {
+  position: absolute;
+  font-size: 130px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  top: -80px;
+  pointer-events: none;
+}
+
+/* LEFT BG NUMBER POSITION */
+.feature-box.left .bg-number {
+  left: -50px;
+}
+
+/* RIGHT BG NUMBER POSITION */
+.feature-box.right .bg-number {
+  right: -50px;
+  left: auto;
+}
+
+/* TITLE */
+.feature-box h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.feature-box h3 span {
+  color: #b5b5b5;
+  font-weight: 400;
+}
+
+/* DESCRIPTION */
+.feature-box p {
+  margin-top: 10px;
+  color: #aaa;
+  max-width: 300px;
+  font-size: 14px;
+}
+
+/* CENTER IMAGE — FIX ADDED */
+.center-image {
+  margin-top: 400px; /* PUSH IMAGE DOWN */
+}
+
+.center-image img {
+  width: 100%;
+  max-width: 350px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* EXCHANGE BOX */
+.exchange-box {
+  margin: 80px auto 0;
+  border: 1px solid #2a2a2a;
+  padding: 25px 35px;
+  width: 80%;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #121212;
+}
+
+/* EXCHANGE LEFT SIDE */
+.ex-left {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.ex-left img {
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.ex-left div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ex-left h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.ex-left h4 span {
+  color: #f5b844;
+}
+
+.ex-left p {
+  color: #828282;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* EXCHANGE RIGHT (ICONS) */
+.ex-right {
+  display: flex;
+  align-items: center;
+  gap: -5px;
+}
+
+.ex-right img {
+  width: 45px;
+  height: 45px;
+}
+
+/* CIRCULAR BOXES */
+.circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  padding: 0px 10px;
+  border: 1px solid rgba(147, 147, 146, 0.3);
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.alingment h4 span {
+  color: #f5b844;
+}
+
+.alingment p {
+  color: #828282;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* -----------------------------------------------------
+   MOBILE RESPONSIVE FIX (UPDATED)
+------------------------------------------------------ */
+@media (max-width: 768px) {
+
+  .features-grid {
+    flex-direction: column; 
+    gap: 40px;
+  }
+
+  /* IMAGE FIRST + PUSH DOWN */
+  .center-image {
+    order: 1;
+    text-align: center;
+    margin-top: 120px; /* EVEN LOWER ON MOBILE */
+  }
+
+  .left-items,
+  .right-items {
+    order: 2;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature-box {
+    max-width: 90% !important;
+    text-align: center !important;
+  }
+
+  .feature-box.left .bg-number,
+  .feature-box.right .bg-number {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .exchange-box {
+    order: 3;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .ex-left {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ex-right {
+    justify-content: center;
+  }
+}

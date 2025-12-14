@@ -1,0 +1,249 @@
+/* ------------------------------------
+   HERO SECTION
+------------------------------------ */
+.hero {
+  padding: 80px 0 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 Golden Glow Behind Text */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 206, 109, 0.28) 0%,
+    rgba(255, 206, 109, 0.12) 35%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  filter: blur(140px);
+  z-index: 0;
+  animation: heroGlow 6s ease-in-out infinite;
+}
+
+/* Glow Animation */
+@keyframes heroGlow {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.15);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* Ensure hero content stays on top */
+.hero-inner {
+  text-align: center;
+  padding-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 206, 109, 0.1);
+  border: 1px solid rgba(255, 206, 109, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #ffce6d;
+  font-size: 12px;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+/* ------------------------------------
+   UPDATED SMALLER H1
+------------------------------------ */
+.hero-title {
+  font-size: 10px;      /* updated */
+  line-height: 0.15;
+  margin: 6px 0 10px;
+  font-weight: 80;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-title .muted {
+  color: #ffce6d;
+}
+
+.hero-sub {
+  color: #a8a8a8;
+  max-width: 780px;
+  margin: 12px auto 24px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* ------------------------------------
+   FORM STYLING
+------------------------------------ */
+.hero-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.input-wrapper.full {
+  width: 480px;
+  position: relative;
+}
+
+.mail-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  opacity: 0.7;
+}
+
+.input-wrapper.full input {
+  width: 100%;
+  padding: 16px 150px 16px 48px;
+  background: #0d0d0d;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 40px;
+  color: #e6e6e6;
+  font-size: 16px;
+}
+
+.btn-inside {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px 20px;
+  background: #ffce6d;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* ------------------------------------
+   3D ELEMENTS
+------------------------------------ */
+.hero-3d-left,
+.hero-3d-right {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  animation: floatUpDown 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+.hero-3d-left { left: 30px; }
+.hero-3d-right { right: 30px; }
+
+.hero-3d-center {
+  position: relative;
+  width: 50%;
+  margin: 40px auto 0;
+  z-index: 1;
+}
+
+.hero-3d-center img {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+/* ------------------------------------
+   MOBILE VIEW
+------------------------------------ */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0 60px;
+  }
+
+  .hero-title {
+    font-size: 24px;    /* updated */
+    line-height: 1.25;
+  }
+
+  .hero-title .muted {
+    font-size: 24px;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+    max-width: 90%;
+    margin-bottom: 16px;
+  }
+
+  .hero-badge {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  /* FORM */
+  .input-wrapper.full {
+    max-width: 100%;
+    width: 320px;
+  }
+
+  .input-wrapper.full input {
+    padding: 14px 115px 14px 42px;
+    font-size: 14px;
+  }
+
+  .btn-inside {
+    padding: 12px 12px;
+    font-size: 11px;
+  }
+
+  .mail-icon {
+    width: 16px;
+  }
+
+  /* Center image */
+  .hero-3d-center {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .hero-3d-center img {
+    width: 75%;
+  }
+
+  /* Hide side elements */
+  .hero-3d-left,
+  .hero-3d-right {
+    display: none;
+  }
+}
+
+/* ------------------------------------
+   SMALL PHONES
+------------------------------------ */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 18px;    /* updated (fixed tiny size) */
+  }
+
+  .hero-sub {
+    font-size: 13px;
+  }
+
+  .input-wrapper.full {
+    max-width: 260px;
+  }
+
+  .hero-3d-center img {
+    width: 80%;
+  }
+}

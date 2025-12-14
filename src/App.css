@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.site-footer{
+  text-align: center;
+}
+.vertical-line {
+  border: none; 
+  border-top: 1px solid #7d7b7b; 
+  width: 80%; 
+  margin: 20px auto; 
+}
+.color-text{
+  color: darkgoldenrod;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.app-root{min-height:100vh;display:flex;flex-direction:column}
+main{flex:1}
+/* Footer Base */
+.site-footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 18px;
+  color: #ffffff;
+  background: #0f0f0f;
+  line-height: 1.6;
+}
+
+.site-footer .color-text {
+  color: #f5b844;
+  font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .site-footer {
+    font-size: 14px;       /* smaller font for mobile */
+    padding: 15px 10px;    /* adjust spacing */
+  }
+
+  .site-footer .color-text {
+    display: block;
+    margin-top: 5px;       /* keep spacing clean */
+    font-size: 15px;
+  }
+}
