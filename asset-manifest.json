@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Webze-Website-/static/css/main.63f95846.css",
-    "main.js": "/Webze-Website-/static/js/main.d492dfa2.js",
-    "index.html": "/Webze-Website-/index.html",
-    "main.63f95846.css.map": "/Webze-Website-/static/css/main.63f95846.css.map",
-    "main.d492dfa2.js.map": "/Webze-Website-/static/js/main.d492dfa2.js.map"
+    "main.css": "/PioGold/static/css/main.63f95846.css",
+    "main.js": "/PioGold/static/js/main.d492dfa2.js",
+    "index.html": "/PioGold/index.html",
+    "main.63f95846.css.map": "/PioGold/static/css/main.63f95846.css.map",
+    "main.d492dfa2.js.map": "/PioGold/static/js/main.d492dfa2.js.map"
   },
   "entrypoints": [
     "static/css/main.63f95846.css",
