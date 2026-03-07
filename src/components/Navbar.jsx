@@ -73,9 +73,11 @@ export default function Navbar() {
               <div className={`dropdown-menu ${ecosystemOpen ? "open" : ""}`}>
                 <Link to="https://pioscan.com">Blockchain</Link>
                 <Link to="https://pioverse.com/">NFT Market</Link>
+                <Link to="https://pioaux.com/lander">Exchange</Link>
                 <Link to="https://tokentool-token.piodefi.com/">Token Tool</Link>
                 <Link to="bridge.pioswap.finance">Bridge</Link>
-                <Link to="#foundation">CCF Foundation</Link>
+                <Link to="https://cancercharityfoundation.com/">CCF Foundation</Link>
+                <Link to="https://www.thehavenwelfare.com/">Haven welfare</Link>
               </div>
             </div>
 
